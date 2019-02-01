@@ -1,7 +1,7 @@
-firebase.auth().onAuthStateChanged(function(user){
-  if(user){
-
-  }else{
-    window.open("./login.html", "_self");
-  }
-});
+// firebase.auth().onAuthStateChanged(function(user){
+//   if(user){
+//
+//   }else{
+//     window.open("./login.html", "_self");
+//   }
+// });
