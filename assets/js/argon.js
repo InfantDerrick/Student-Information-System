@@ -140,8 +140,8 @@ function initMap() {
         title: 'Hello World!'
     });
 
-    var contentString = '<div class="info-window-content"><h2>Argon Dashboard</h2>' +
-        '<p>A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</p></div>';
+    var contentString = '<div class="info-window-content"><h2>S-I-S Dashboard</h2>' +
+        '<p></p></div>';
 
     var infowindow = new google.maps.InfoWindow({
         content: contentString
@@ -914,10 +914,7 @@ var OrdersChart = (function() {
 					yAxes: [{
 						ticks: {
 							callback: function(value) {
-								if (!(value % 10)) {
-									//return '$' + value + 'k'
 									return value
-								}
 							}
 						}
 					}]
@@ -941,10 +938,10 @@ var OrdersChart = (function() {
 				}
 			},
 			data: {
-				labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				labels: ['Math', 'Physics', 'English', 'Java', 'French', 'PE'],
 				datasets: [{
-					label: 'Sales',
-					data: [25, 20, 30, 22, 17, 29]
+					label: 'Grades',
+					data: [95, 93, 80, 99.5, 90, 95]
 				}]
 			}
 		});
@@ -993,9 +990,7 @@ var SalesChart = (function() {
 						},
 						ticks: {
 							callback: function(value) {
-								if (!(value % 10)) {
-									return '$' + value + 'k';
-								}
+								return value
 							}
 						}
 					}]
@@ -1011,7 +1006,7 @@ var SalesChart = (function() {
 								content += '<span class="popover-body-label mr-auto">' + label + '</span>';
 							}
 
-							content += '<span class="popover-body-value">$' + yLabel + 'k</span>';
+							content += '<span class="popover-body-value">' + yLabel + '</span>';
 							return content;
 						}
 					}
@@ -1021,7 +1016,7 @@ var SalesChart = (function() {
 				labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 				datasets: [{
 					label: 'Performance',
-					data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
+					data: [4.1,4.2,3.9,3.7,4.4,4.3,4.0,4.1]
 				}]
 			}
 		});
