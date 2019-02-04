@@ -1,11 +1,11 @@
-// firebase.auth().onAuthStateChanged(function(user){
-//   if(user){
-//
-//   }else{
-//     window.open("./login.html", "_self");
-//   }
-// });
-$( document ).ready(function() {
+firebase.auth().onAuthStateChanged(function(user){
+  if(user){
+
+  }else{
+    window.open("./login.html", "_self");
+  }
+});
+$(document).ready(function() {
     console.log( "ready!" );
 });
 function logOut(){
