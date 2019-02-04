@@ -3,6 +3,7 @@ firebase.auth().onAuthStateChanged(function(user){
     user.updateProfile({
       displayName: document.getElementById("name").value;
     }).then(function(){
+      console.log(user.displayName);
       window.open('./index.html', '_self');
     }).catch(function(error){
       alert(error);
