@@ -1,6 +1,12 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      window.open('./index.html', '_self');
+      user.updateProfile({
+        displayName: document.getElementById("name").value;
+      }).then(function(){
+        window.open('./index.html', '_self');
+      }).catch(function(error){
+        alert(error);
+      });
     }
   });
 function login(){
