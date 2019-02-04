@@ -1,12 +1,6 @@
-firebase.auth().onAuthStateChanged(function(user) {
+irebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      user.updateProfile({
-        displayName: document.getElementById("name").value;
-      }).then(function(){
-        window.open('./index.html', '_self');
-      }).catch(function(error){
-        alert(error);
-      });
+      window.open('./index.html', '_self');
     }
   });
 function login(){
