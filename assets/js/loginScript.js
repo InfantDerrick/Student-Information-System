@@ -1,4 +1,4 @@
-irebase.auth().onAuthStateChanged(function(user) {
+firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       window.open('./index.html', '_self');
     }
